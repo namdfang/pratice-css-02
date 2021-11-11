@@ -13,37 +13,29 @@
     <div class="login-container">
       <div class="login">
         <div class="login__text">
-          <p>Welcome back</p>
-          <h2>Login to your account</h2>
+          <h2>Register a account</h2>
         </div>
 
-        <form action="" method="get" onsubmit="return checkLogin()">
+        <form action="" method="POST" onsubmit="return checkRegister()">
           <div class="login__input">
-            <label for="">Username</label><br />
+            <label for="username">Username</label><br />
             <input id="username" name="name" type="text"  placeholder="abcxyz"/><br />
             
-            <label for="">Password</label><br />
+            <label for="password">Password</label><br />
             <input id="password" name="password" type="password" placeholder="*********"/>
+
+            <label for="confirm-password">Confirm password</label><br />
+            <input id="confirm-password" name="password" type="password" placeholder="*********"/>
           </div>
-  
-          <div class="login__support">
-            <div class="checkbox">
-              <input type="checkbox" value="1" id="click-checkbox" />
-              <label for="click-checkbox"></label>
-            </div>
-            <span>Remember me</span>
-            <a href="#">Forget password?</a>
-            <div class="clear"></div>
-          </div>
-  
-          <button type= "submit" class="btn btn--green" >login now</button>
-  
+          <button type= "submit" class="btn btn--green" >Register</button>
+
           <button class="btn btn--blue"><img src="./assets/image/logo-gg.png" alt="" />Or sign-in with
-            google</button>  
+            google</button> 
         </form>
         <div class="login__free">
-          <p >Don't have an account? <a href="./register.html">Register</a></p>
+          <p class="register">You haved account? <a href="./index.html">Login</a></p>
         </div>
       </div>
+    </div>
   </body>
 </html>
